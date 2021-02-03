@@ -1,4 +1,4 @@
-package com.association.AssociationExample;
+package com.association.AssociationExample.controller;
 
 import java.util.List;
 
