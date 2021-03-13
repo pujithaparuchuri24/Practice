@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="emp_reg")
@@ -16,6 +17,7 @@ public class EmployeeModel {
      private int id;
      
      @Column(name="e_name")
+     @NotBlank(message="name must")
      private String name;
      
      @Column(name="email")
@@ -23,6 +25,14 @@ public class EmployeeModel {
      
      @Column(name="password")
      private String pwd;
+      
+	public EmployeeModel(int id, String name, String email, String pwd) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.pwd = pwd;
+	}
 
 	public int getId() {
 		return id;

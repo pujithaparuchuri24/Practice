@@ -31,9 +31,9 @@ public class EmployeeController {
 		return emp.findAll();
 	}
 	@GetMapping("/get/{id}")
-	public Employee getById(@PathVariable int id)
+	public Employee getById(@PathVariable("id") int i)
 	{
-		return emp.findById(id).get();
+		return emp.findById(i).get();
 	}
 
 

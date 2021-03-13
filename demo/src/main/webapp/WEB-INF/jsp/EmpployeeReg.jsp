@@ -16,7 +16,7 @@
 <h1 class="text-center">EmployeeRegister</h1>
 </div><! card-header> 
 <div class="card-body">
-<form action="save" method="post">
+<form action="save" method="get">
 <div class="row form-group">
 <div class="col-md-4">
 <label for="name">Name:</label>
@@ -59,6 +59,10 @@
 <div><!card -body>
 <div class="card-footer">
 ${msg}
+${emp}
+ 
+<%--${em} --%>
+
 </div>
 </div><!card>
 
